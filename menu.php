@@ -1,0 +1,53 @@
+<?php
+	if(isset($menu)){
+		if($menu==0){
+			?>
+				<style>
+					#menu{
+					   background-color:#396595; 
+					}
+				</style>
+			<?php
+		}
+		if($menu==1){
+		?>
+			<style>
+				#menu1{
+					background-color:#396595; 
+				}
+			</style>
+		<?php
+		}
+		if($menu==2){
+		?>
+			<style>
+				#menu2{
+					background-color:#396595; 
+				}
+			</style>
+		<?php
+		}
+		if($menu==3){
+		?>
+			<style>
+				#menu3{
+					background-color:#396595; 
+				}
+			</style>
+		<?php
+		}
+		if($menu==4){
+		?>
+			<style>
+				#menu4{
+					background-color:#396595; 
+				}
+			</style>
+		<?php
+		}
+	
+	}
+	else{
+		header('Location: index.php');
+	}
+?>
