@@ -220,7 +220,7 @@ body {
 
 @media screen and (min-width: 40em) {
   .nav-collapse li {
-    width: 25%;
+    width: 20%;
     *width: 24.9%;
     /* IE7 Hack */
     _width: 19%;
@@ -569,6 +569,39 @@ article .tituloFooter2 {
 /****************************************************************************************************/
 /*TRABAJOS*/
 /****************************************************************************************************/
+}
+.paginacion{
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.paginacion a{
+padding: 6px;
+outline: none;
+margin-right: 5px;
+text-decoration: none;
+color:#000;
+font-weight: bold;
+}
+
+.flecha span{
+font-size: 25px;
+color:#000;
+font-weight: bold;
+}
+
+a.actual{
+ border:2px solid #000;
+ background-color: #fff;
+ color:#000;
+ text-decoration: none;
+ font-weight: bold;
+ padding: 7px;
+}
+
 div.promos{
   text-align: center;
   margin-top: 20px
@@ -583,7 +616,7 @@ div.polaroid {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   margin-bottom: 60px;
-  border: solid 1px #000;
+
 }
 
 .polaroid img{
@@ -594,6 +627,12 @@ div.polaroid {
 div.container {
   padding: 10px;
   border: solid 1px #000;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.linkpromo{
+  text-decoration: none;
+  color:#000;
 }
 
 .textoAviso {
@@ -1324,6 +1363,33 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+/***********************************************************************************************
+**********PANEL DE ADMINISTRACIÓN***********
+/***********************************************************************************************/
+.formularioInicio{ 
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#pass{
+  width: 50%;
+   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.boton{
+  width:50%;
+  color:#fff;
+  background: #223C55;
+  padding:10px;
+}
+.boton:hover{
+ 
+ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/***********************************************************************************************
+**********RESPONSIVE***********
+/***********************************************************************************************/
 
 @media (max-width: 900px) {
   article img {

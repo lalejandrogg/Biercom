@@ -27,15 +27,35 @@
  ?>
 	<div class="contenedor">
 		
-			
-		<nav class="nav-collapse">
-			<ul>
-				  <li><a id="menu" href="./index.php" title="Ir Inicio">Inicio</a></li>
-			  <li><a id="menu1" href="./contacto.php" title="Ir Contacto">Contacto</a></li>
-			  <li><a id="menu2" href="./servicios.php" title="Ir Servicios">Servicios</a></li>
-			  <li><a id="menu3" href="./trabajos.php" title="Ir Trabajos">Promociones</a></li>	
-			</ul>
-		</nav>
+		<?php
+        if(isset($_SESSION['admin'])&&$_SESSION['admin']==true){
+	    ?>
+	  <nav class="nav-collapse">
+	    <ul>
+	        <li><a id="menu" href="./index.php" title="Ir Inicio">Inicio</a></li>
+	        <li><a id="menu1" href="./contacto.php" title="Ir Contacto">Contacto</a></li>
+	        <li><a id="menu2" href="./servicios.php" title="Ir Servicios">Servicios</a></li>
+	        <li><a id="menu3" href="./trabajos.php" title="Ir Trabajos">Promociones</a></li>
+	        <li><a id="menu4" href="./menuAdmin.php" title="Ir Admin">Administracion</a></li>   
+	    </ul>
+	  </nav>
+
+	    <?php
+	    }
+	    else{
+	     ?>
+
+	    <nav class="nav-collapse">
+	        <ul>
+	              <li><a id="menu" href="./index.php" title="Ir Inicio">Inicio</a></li>
+	              <li><a id="menu1" href="./contacto.php" title="Ir Contacto">Contacto</a></li>
+	              <li><a id="menu2" href="./servicios.php" title="Ir Servicios">Servicios</a></li>
+	              <li><a id="menu3" href="./trabajos.php" title="Ir Trabajos">Promociones</a></li>    
+	        </ul>
+	    </nav>
+	    <?php
+	     }
+	     ?>
 
 	    <div class="filaContactos">
 			<div class="columnaGrande3 izquierda">
